@@ -1,57 +1,106 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Contact | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mason Stigall's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- <script src="main.js"></script> -->
 </head>
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <!-- replacing top header with navbar -->
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <strong>Mason Stigall</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse navbar-right justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav navbar-right float-right">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+    
+                </ul>
+    
+            </div>
+        </nav>
+<div class="container">
+<div class="col-xs-9">
+    <section id="mainBox">
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
+        <div class="contentTitle">
+            <p>Contact</p>
+        </div>
+
+        <div id="spacer">
+        </div>
+
+        <div id="textArea">
+
+            <div class="form-title">
+                Name
+            </div>
+
+            <form>
+
+                <input type="text" class="name-box">
+
+
+
+                <br>
+
+
+                <div class="form-title">
+                    Email
+                </div>
+
+
+                <input type="text" class="email-box">
+
+
+                <br>
+
+                <div class="form-title">
+                    Message
+                </div>
+
+
+
+                <textarea class="message-box" form="contact-form"></textarea>
+
+                <input type="submit" value="Submit" class="submit-button">
+
+            </form>
+
+        </div>
 
     </section>
-
-  </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 
     </div>
-  </footer>
+</div>
+    <footer>
+        Copyright Mason Stigall
+    </footer>
+
+
+
 </body>
 
 </html>

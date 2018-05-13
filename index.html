@@ -1,47 +1,130 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html>
+
+
+
+<!-- Seemed more difficult than normal to add bootstrap tags to page that has already been built and stylized -->
+<!-- adding bootstrap tags just seemed to break things... -->
+
+
 
 <head>
-  <meta charset="UTF-8">
-  <title>About | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mason Stigall's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+
+    <!-- <script src="main.js"></script> -->
 </head>
 
 <body>
 
-  <header id="masthead">
+    <!-- replacing top header with navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <strong>Mason Stigall</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse navbar-right justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar-right float-right">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
     <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+        <div class="row">
+            <div class="col-xs-12 col-s-12 col-md-8 col-lg-8">
+                <section id="mainBox">
+                    <div class="row">
+                        <div class="contentTitle">
+                            <p>About Me</p>
+                        </div>
+                    </div>
+
+                    <div id="spacer">
+                    </div>
+
+                    <div class="row" id="textArea">
+
+                        <!-- making img responsive but doing weird things with aspect ratio... -->
+                        <!-- can set max width to fix ratio but no responsive sizing, only movement -->
+                        <img class="col-xs-12 col-s-12 col-md-4 col-lg-4" id="myPic" src="assets/images/headshot.png" alt="Mason Stigall">
+
+                        <div class="col-xs-12 col-s-12 col-md-8 col-lg-8">
+                            <p>
+                                I am currently a student in University of Richmond's full stack web development program. Seeking employment in web development
+                                after graduation in October 2018. I have prior coding experience in Java and strong technical
+                                skills, and have built multiple computers myself.
+                            </p>
+
+                            <p>
+                                I am a huge fan of music in almost all forms, both listening and playing. I primarily play bass guitar and electric guitar,
+                                and am currently learning how to play piano! I also played clarinet and trombone for middle
+                                and high school band. I love everything involving rock and roll, from classic rock to the
+                                modern era. As a bassist, I also love anything with a funky beat!
+                            </p>
+
+                            <p>
+                                I love sports in any form, I am a former member and team captain of the VCU Men's Rugby Team and a fan of the NFL's Washington
+                                Redskins. I played soccer in my youth and currently play squash and rec kickball in my spare
+                                time.
+
+                            </p>
+                        </div>
+
+                    </div>
+
+                </section>
+            </div>
+
+            <div id="connectBox" class="col-xs-12 col-s-12 col-md-4 col-lg-4">
+                <div id="connect" class="connect">
+                    Connect With Me:
+                </div>
+                <br>
+                <div id="connectLinks">
+                    <ul>
+                        <li>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#">GitHub</a>
+                        </li>
+                        <li>
+                            <a href="#">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
+    <footer>
+        Copyright Mason Stigall
+    </footer>
 
-      <img src="assets/images/cat.jpg" class="auth-image" alt="Your Name">
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus vitae sollicitudin consectetur.</p>
 
-      <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
-
-      <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
-    </section>
-
-  </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
-  </footer>
 </body>
 
 </html>
